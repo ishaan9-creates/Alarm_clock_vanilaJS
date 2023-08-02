@@ -1,37 +1,49 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8" />
     <title>Alarm Clock by Ishan Chakraborty</title>
+    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+    <!-- The main container wrapper for the alarm clock -->
     <div class="wrapper">
-        <img src="./2793576.png" alt="clock" />
+        <!-- Display an image of a clock -->
+        <img src="./files/2793576.png" alt="clock" />
+        <!-- Display the current time in 12-hour format -->
         <h1>00:00:00 PM</h1>
+        <!-- Container for the time selection options -->
         <div class="content">
+            <!-- Column for selecting the hour -->
             <div class="column">
                 <select>
+                    <!-- Initial disabled option for the hour -->
                     <option value="Hour" selected disabled hidden>Hour</option>
                 </select>
             </div>
+            <!-- Column for selecting the minute -->
             <div class="column">
                 <select>
+                    <!-- Initial disabled option for the minute -->
                     <option value="Minute" selected disabled hidden>Minute</option>
                 </select>
             </div>
+            <!-- Column for selecting AM/PM -->
             <div class="column">
                 <select>
+                    <!-- Initial disabled option for AM/PM -->
                     <option value="AM/PM" selected disabled hidden>AM/PM</option>
                 </select>
             </div>
         </div>
+        <!-- Button to set or clear the alarm -->
         <button>Set Alarm</button>
     </div>
+    <!-- Include the JavaScript file to handle alarm functionality -->
     <script src="script.js"></script>
 </body>
 
